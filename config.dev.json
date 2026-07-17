@@ -1,5 +1,61 @@
 {
     "token": "7871047326:AAHqL0KzHrDx1DYv5hK__EXYmNW8b51exIE",
-    "admin_id": "7032872177", 
-    "additional_admins": []
+    "admin_id": "7032872177",
+    "additional_admins": [],
+    "bot_name": "Master Charbel Bot V2",
+    "version": "2.0.0",
+    "prefix": "/",
+    "language": "fr",
+    "timezone": "Europe/Paris",
+    "features": {
+        "enable_logging": true,
+        "enable_stats": true,
+        "enable_welcome": true,
+        "enable_ai": true,
+        "enable_translate": true,
+        "enable_imgbb": true
+    },
+    "messages": {
+        "welcome": "👋 Bienvenue {name} ! Je suis {bot_name}, ton assistant intelligent. Tape /help pour voir les commandes.",
+        "error": "❌ Une erreur est survenue. Réessaie plus tard.",
+        "admin_only": "⛔ Cette commande est réservée aux administrateurs.",
+        "not_found": "❌ Commande inconnue. Tape /help pour voir la liste.",
+        "maintenance": "🔧 Le bot est en maintenance. Reviens plus tard !"
+    },
+    "api_keys": {
+        "weather": "",
+        "crypto": "",
+        "imgbb": "",
+        "news": ""
+    },
+    "limits": {
+        "max_message_length": 4096,
+        "ai_timeout": 30000,
+        "rate_limit": 5
+    },
+    "webhook": {
+        "enabled": true,
+        "port": 3000
+    },
+    "database": {
+        "enabled": true,
+        "type": "sqlite",
+        "path": "./data/users.db"
+    },
+    "commands": {
+        "enabled": [
+            "start",
+            "help",
+            "menu",
+            "ping",
+            "stats",
+            "translate",
+            "ai",
+            "about",
+            "admin",
+            "imgbb",
+            "getid"
+        ],
+        "disabled": []
+    }
 }
