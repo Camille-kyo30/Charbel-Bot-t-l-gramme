@@ -1,14 +1,43 @@
 {
-  "name": "telegram-bot",
-  "version": "1.0.0",
-  "description": "Bot Telegram avancé",
+  "name": "master-charbel-bot-v2",
+  "version": "2.0.0",
+  "description": "🤖 Master Charbel Telegram Bot V2 - Bot avancé avec IA, stats et interactions",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node test.js",
+    "pm2": "pm2 start index.js --name 'master-charbel-bot'"
   },
+  "keywords": [
+    "telegram-bot",
+    "master-charbel",
+    "ai",
+    "bot",
+    "telegram"
+  ],
+  "author": "Master Charbel",
+  "license": "MIT",
   "dependencies": {
-    "telegraf": "^4.12.2",
+    "telegraf": "^4.15.3",
     "express": "^4.18.2",
-    "axios": "^1.5.0"
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "sqlite3": "^5.1.6",
+    "moment": "^2.29.4",
+    "node-cron": "^3.0.3",
+    "chalk": "^4.1.2",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Paul123555/Charbel-Bot-t-l-gramme"
   }
 }
